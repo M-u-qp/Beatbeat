@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Beatbeat</string>
+    <string name="title_home">Home</string>
+    <string name="title_listen">Listen</string>
+    <string name="title_search">Search</string>
+    <string name="title_favorites">Favorites</string>
+
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="register">Register?</string>
+    <string name="registration">Registration</string>
+    <string name="fill_in_all_fields">Fill in all the fields</string>
+    <string name="fields_cannot_be_empty">Fields cannot be empty</string>
+    <string name="login_already_exists">The login already exists</string>
+    <string name="username_or_password_was_entered_incorrectly">The username or password was entered incorrectly</string>
+    <string name="fingerprint">Login by fingerprint</string>
+    <string name="authorization">Authorization</string>
+    <string name="cancel">Cancel</string>
+    <string name="authorization_error">Authorization error, create fingerprints on your device</string>
+    <string name="user_already_exists">User already exists</string>
+    <string name="invalid_login_or_password">Invalid login or password</string>
+
+    <string name="error_username_contains_at">Username cannot contain @ symbol</string>
+    <string name="error_username_empty">Username cannot be empty</string>
+    <string name="error_username_length">Username must be between %1$d and %2$d characters</string>
+    <string name="error_username_invalid_chars">Username can only contain letters, numbers, dots, hyphens and underscores</string>
+    <string name="error_username_taken">Username is already taken</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="error_email_not_found">Couldn\'t get the user\'s email</string>
+    <string name="error_user_not_authenticated">The user is not logged in</string>
+
+    <string name="error_weak_password">The password must contain at least 6 characters</string>
+    <string name="error_invalid_credentials">Incorrect email or password</string>
+    <string name="error_user_collision">The user with this email already exists</string>
+    <string name="error_invalid_user">The user was not found</string>
+    <string name="error_network">Network error. Check the connection</string>
+    <string name="error_unknown">An unknown error has occurred</string>
+    <string name="error_operation_failed">The operation could not be performed</string>
+    <string name="error_invalid_email">Invalid email</string>
+
+    <string name="music_feed">Music feed</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log out from profile</string>
+
+    <string name="internet_problem">The problem with the Internet</string>
+    <string name="server_error">Server error</string>
+    <string name="unknown_error">Unknown error</string>
+
+    <string name="something_went_wrong">Something went wrong…</string>
+    <string name="internet_problem_or_server">The problem with the Internet or Server</string>
+
+    <string name="update">Update</string>
+
+    <string name="search_hint">Track, artist, album… </string>
+    <string name="search_not_found">We didn\'t find anything.</string>
+    <string name="artist">Artist</string>
+    <string name="album">Album</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="tracks">Tracks</string>
+
+    <string name="genres">Genres</string>
+    <string name="genre_rock">Rock</string>
+    <string name="genre_pop">Pop</string>
+    <string name="genre_jazz">Jazz</string>
+    <string name="genre_classical">Classical</string>
+    <string name="genre_hiphop">Hiphop</string>
+    <string name="genre_electronic">Electronic</string>
+
+    <string name="track_added_to_favorites">Track added to favorites</string>
+    <string name="track_removed_to_favorites">Track removed from favorites</string>
+    <string name="album_added_to_favorites">Album added to favorites</string>
+    <string name="album_removed_to_favorites">Album removed from favorites</string>
+    <string name="artist_added_to_favorites">Artist added to favorites</string>
+    <string name="artist_removed_to_favorites">Artist removed from favorites</string>
+    <string name="tracks_not_added">Tracks haven\'t been added yet</string>
+    <string name="albums_not_added">Albums haven\'t been added yet</string>
+    <string name="artists_not_added">Artists haven\'t been added yet</string>
+
+    <string name="popular_tracks">Popular tracks</string>
+
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="to_share">To share</string>
+    <string name="browsable">To browsable</string>
+    <string name="download_track">Download track</string>
+    <string name="download_error">Error when downloading</string>
+    <string name="downloading">Downloading</string>
+    <string name="download_complete">Download complete</string>
+    <string name="failed_download">Failed to download file</string>
+    <string name="failed_create_media">Failed to create media entry</string>
+    <string name="downloadManager_not_available">DownloadManager not available</string>
+
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="acoustic_collection">Acoustic collection</string>
+    <string name="electric_collection">Electric collection</string>
+    <string name="female_voices">Female voices</string>
+    <string name="male_voices">Male voices</string>
+    <string name="slow_collection">At a slow pace</string>
+    <string name="fast_collection">At high speed</string>
+    <string name="create_playlist">Create playlist</string>
+    <string name="creating_playlist">Creating playlist</string>
+    <string name="enter_name">Enter a name</string>
+    <string name="enter_description">Enter a description</string>
+    <string name="create">Create</string>
+    <string name="playlists">Playlists</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="remove_from_playlist">Remove from playlist</string>
+    <string name="selecting_playlist">Selecting a playlist</string>
+    <string name="added_to">Added to</string>
+
+    <string name="one_track">Track</string>
+    <string name="few_track">Track</string>
+    <string name="many_track">Track</string>
+
+    <string name="permission_notifications">Notifications</string>
+    <string name="notification_player_management">Allow notifications to control music playback</string>
+    <string name="permission_storage">Storage access</string>
+    <string name="storage_permission_rationale">Allow storage access to save music files</string>
+    <string name="permission_media_audio">Media Access</string>
+    <string name="media_audio_permission_rationale">Allow media access to manage audio files</string>
+    <string name="allow">Allow</string>
+
+</resources>

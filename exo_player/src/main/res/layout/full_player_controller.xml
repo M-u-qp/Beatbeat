@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/dark_brown"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/full_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:importantForAccessibility="no"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/full_cover_iv"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitXY"
+            android:src="@drawable/icons8_track" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/full_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/very_light_brown"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/full_cover" />
+
+        <LinearLayout
+            android:id="@+id/player_controls_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_title_tv">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/full_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_brown"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:importantForAccessibility="no"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/full_prev_ic"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icons8_previous"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/full_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/light_green"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:importantForAccessibility="no"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/full_play_ic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icons8_play_v2"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/full_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_brown"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:importantForAccessibility="no"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/full_next_ic"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icons8_next"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/full_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/genre_pop"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:focusable="true"
+                android:importantForAccessibility="no"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/full_stop_ic"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icons8_stop"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/full_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/full_progress"
+            app:layout_constraintTop_toBottomOf="@+id/full_progress" />
+
+        <androidx.media3.ui.DefaultTimeBar
+            android:id="@+id/full_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/player_controls_ll"
+            app:layout_constraintStart_toStartOf="@+id/player_controls_ll"
+            app:layout_constraintTop_toBottomOf="@id/player_controls_ll" />
+
+        <TextView
+            android:id="@+id/full_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/full_progress"
+            app:layout_constraintTop_toBottomOf="@+id/full_progress" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

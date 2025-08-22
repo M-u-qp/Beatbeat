@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "427851382716",
+    "project_id": "clean-vista-405308",
+    "storage_bucket": "clean-vista-405308.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427851382716:android:742d369e4e181c3fa0f5b9",
+        "android_client_info": {
+          "package_name": "com.muqp.beatbeat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7sYsAVQ145ewgFMNgHdaoQZYbTFDIm9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

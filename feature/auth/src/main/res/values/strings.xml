@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="password_at_least_6_characters">The password must contain at least 6 characters.</string>
+    <string name="invalid_email_or_password">Invalid email address or password</string>
+    <string name="user_with_email_already_exists">The user with this email already exists</string>
+    <string name="user_not_found">The user was not found</string>
+    <string name="network_error">Network error. Check the connection</string>
+    <string name="error_has_occurred">An error has occurred:</string>
+    <string name="user_not_logged_in">The user is not logged in</string>
+</resources>

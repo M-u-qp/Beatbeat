@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_favoritesFragment_to_favoriteAlbumsFragment" type="id"/>
+    <item name="action_favoritesFragment_to_favoriteArtistsFragment" type="id"/>
+    <item name="action_favoritesFragment_to_favoriteTracksFragment" type="id"/>
+
+    <item name="action_favoriteAlbumsFragment_to_albumDetailsFragment" type="id"/>
+    <item name="action_favoriteArtistsFragment_to_artistDetailsFragment" type="id"/>
+</resources>

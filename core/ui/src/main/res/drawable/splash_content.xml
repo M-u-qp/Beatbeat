@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="100dp"
+        android:height="100dp"
+        android:gravity="center">
+        <bitmap
+            android:gravity="center"
+            android:mipMap="true"
+            android:src="@drawable/icons8_beatbeat" />
+    </item>
+
+    <item
+        android:drawable="@drawable/ic_beatbeat_text"
+        android:height="100dp"
+        android:width="400dp"
+        android:bottom="20dp"
+        android:gravity="center|bottom"/>
+</layer-list>

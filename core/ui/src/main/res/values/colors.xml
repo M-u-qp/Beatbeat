@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="very_light_brown">#E6E2D3 </color>
+    <color name="light_brown">#C8C6AF </color>
+    <color name="dark_brown">#8B7355 </color>
+    <color name="light_green">#A6BC7F</color>
+    <color name="dark_green">#556B2F </color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="semi_transparent_black">#80000000</color>
+
+    <color name="genre_rock">#FFCCBC</color>
+    <color name="genre_pop">#F8BBD0</color>
+    <color name="genre_jazz">#D1C4E9</color>
+    <color name="genre_classical">#B2EBF2</color>
+    <color name="genre_hiphop">#C8E6C9</color>
+    <color name="genre_electronic">#FFF9C4</color>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@id/homeFragment"
+        android:name="com.muqp.feature_home.presentation.screen.HomeFragment">
+        <action
+            android:id="@id/action_homeFragment_to_authFragment"
+            app:destination="@id/mainActivity"
+            app:popUpTo="@id/navigation_main"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@id/searchFragment"
+        android:name="com.muqp.feature_search.presentation.screen.SearchFragment">
+        <action
+            android:id="@id/action_searchFragment_to_foundResultMainFragment"
+            app:destination="@id/foundResultMainFragment" />
+        <action
+            android:id="@id/action_searchFragment_to_genreSearchFragment"
+            app:destination="@id/genreSearchFragment" />
+        <action
+            android:id="@id/action_searchFragment_to_artistDetailsFragment"
+            app:destination="@id/artistDetailsFragment" />
+        <action
+            android:id="@id/action_searchFragment_to_albumDetailsFragment"
+            app:destination="@id/albumDetailsFragment" />
+        <action
+            android:id="@id/action_searchFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@id/favoritesFragment"
+        android:name="com.muqp.feature_favorites.presentation.screen.favorites.FavoritesFragment" >
+        <action
+            android:id="@id/action_favoritesFragment_to_favoriteAlbumsFragment"
+            app:destination="@id/favoriteAlbumsFragment" />
+        <action
+            android:id="@id/action_favoritesFragment_to_favoriteArtistsFragment"
+            app:destination="@id/favoriteArtistsFragment" />
+        <action
+            android:id="@id/action_favoritesFragment_to_favoriteTracksFragment"
+            app:destination="@id/favoriteTracksFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@id/listenFragment"
+        android:name="com.muqp.feature_listen.presentation.screen.ListenFragment" >
+        <action
+            android:id="@id/action_listenFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.muqp.beatbeat.ui.MainActivity" />
+
+    <fragment
+        android:id="@+id/foundResultMainFragment"
+        android:name="com.muqp.feature_search.presentation.screen.found_result_tab.FoundResultMainFragment"
+        android:label="FoundResultMainFragment" >
+        <action
+            android:id="@id/action_foundResultMainFragment_to_artistDetailsFragment"
+            app:destination="@id/artistDetailsFragment" />
+        <action
+            android:id="@id/action_foundResultMainFragment_to_albumDetailsFragment"
+            app:destination="@id/albumDetailsFragment" />
+        <action
+            android:id="@id/action_foundResultMainFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genreSearchFragment"
+        android:name="com.muqp.feature_search.presentation.screen.genre_search.GenreSearchFragment"
+        android:label="GenreSearchFragment" >
+        <action
+            android:id="@id/action_genreSearchFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistDetailsFragment"
+        android:name="com.muqp.beatbeat.details.presentation.screen.artist_details.ArtistDetailsFragment"
+        android:label="ArtistDetailsFragment" >
+        <action
+            android:id="@id/action_artistDetailsFragment_to_albumDetailsFragment"
+            app:destination="@id/albumDetailsFragment" />
+        <action
+            android:id="@id/action_artistDetailsFragment_to_allTracksFragment"
+            app:destination="@id/allTracksFragment" />
+        <action
+            android:id="@id/action_artistDetailsFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumDetailsFragment"
+        android:name="com.muqp.beatbeat.details.presentation.screen.album_details.AlbumDetailsFragment"
+        android:label="AlbumDetailsFragment" >
+        <action
+            android:id="@id/action_albumDetailsFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTracksFragment"
+        android:name="com.muqp.beatbeat.details.presentation.screen.all_tracks.AllTracksFragment"
+        android:label="AllTracksFragment" >
+        <action
+            android:id="@id/action_allTracksFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteAlbumsFragment"
+        android:name="com.muqp.feature_favorites.presentation.screen.favorite_albums.FavoriteAlbumsFragment"
+        android:label="FavoriteAlbumsFragment" >
+        <action
+            android:id="@id/action_favoriteAlbumsFragment_to_albumDetailsFragment"
+            app:destination="@id/albumDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteArtistsFragment"
+        android:name="com.muqp.feature_favorites.presentation.screen.favorite_artists.FavoriteArtistsFragment"
+        android:label="FavoriteArtistsFragment" >
+        <action
+            android:id="@id/action_favoriteArtistsFragment_to_artistDetailsFragment"
+            app:destination="@id/artistDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteTracksFragment"
+        android:name="com.muqp.feature_favorites.presentation.screen.favorite_tracks.FavoriteTracksFragment"
+        android:label="FavoriteTracksFragment" />
+
+</navigation>

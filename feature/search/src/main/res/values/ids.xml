@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_searchFragment_to_foundResultMainFragment" type="id"/>
+    <item name="action_searchFragment_to_genreSearchFragment" type="id"/>
+    <item name="action_foundResultMainFragment_to_artistDetailsFragment" type="id"/>
+    <item name="action_foundResultMainFragment_to_albumDetailsFragment" type="id"/>
+    <item name="action_searchFragment_to_artistDetailsFragment" type="id"/>
+    <item name="action_searchFragment_to_albumDetailsFragment" type="id"/>
+    <item name="action_searchFragment_to_favoritesFragment" type="id"/>
+    <item name="action_genreSearchFragment_to_favoritesFragment" type="id"/>
+    <item name="action_foundResultMainFragment_to_favoritesFragment" type="id"/>
+</resources>

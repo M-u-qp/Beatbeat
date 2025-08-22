@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:backgroundTint="@color/dark_brown"
+    android:elevation="4dp"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:id="@+id/mini_container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mini_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:importantForAccessibility="no"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/mini_cover_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icons8_track" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/mini_container2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/mini_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.media3.ui.DefaultTimeBar
+                android:id="@+id/mini_progress"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:id="@+id/mini_container3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mini_prev_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_brown"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:importantForAccessibility="no"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/mini_prev_ic"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icons8_previous"
+                        app:tint="@color/white" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mini_play_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/light_green"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:importantForAccessibility="no"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/mini_play_ic"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icons8_play_v2"
+                        app:tint="@color/white" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mini_next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_brown"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:importantForAccessibility="no"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/mini_next_ic"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icons8_next"
+                        app:tint="@color/white" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mini_stop_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="@color/genre_pop"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:importantForAccessibility="no"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/mini_stop_ic"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icons8_stop"
+                        app:tint="@color/white" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play">Играть</string>
+    <string name="stop">Стоп</string>
+    <string name="next">Следующий</string>
+    <string name="previous">Предыдущий</string>
+    <string name="unknown_track">Неизвестный трек</string>
+</resources>

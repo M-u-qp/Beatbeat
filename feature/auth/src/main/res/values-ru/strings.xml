@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="password_at_least_6_characters">Пароль должен содержать не менее 6 символов.</string>
+    <string name="invalid_email_or_password">Неверный адрес электронной почты или пароль</string>
+    <string name="user_with_email_already_exists">Пользователь с этой электронной почтой уже существует</string>
+    <string name="user_not_found">Пользователь не найден</string>
+    <string name="network_error">Ошибка сети. Проверьте подключение</string>
+    <string name="error_has_occurred">Произошла ошибка:</string>
+    <string name="user_not_logged_in">Пользователь не авторизован</string>
+</resources>
